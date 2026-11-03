@@ -12,6 +12,7 @@ import vendor.pixelworks.hardware.display.DisplayConfigVariableInfo;
 import vendor.pixelworks.hardware.display.HwcRect;
 import vendor.pixelworks.hardware.display.IrisFixedConfig;
 import vendor.pixelworks.hardware.display.IIrisCallback;
+import vendor.pixelworks.hardware.display.IIrisComposerClient;
 import vendor.pixelworks.hardware.display.ISoftIrisClient;
 import vendor.pixelworks.hardware.display.LayerStack;
 import vendor.pixelworks.hardware.display.LutData;
@@ -58,4 +59,5 @@ interface IIris {
     int[] updateDisplayBrightness(long display, int type, in int[] values);
     int setColorTransform(in float[] matrix);
     void configureIrisHdrMode(int mode);
+    IIrisComposerClient createComposerClient();
 }

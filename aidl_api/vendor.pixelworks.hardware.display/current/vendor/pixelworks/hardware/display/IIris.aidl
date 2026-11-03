@@ -63,4 +63,5 @@ interface IIris {
   int[] updateDisplayBrightness(long display, int type, in int[] values);
   int setColorTransform(in float[] matrix);
   void configureIrisHdrMode(int mode);
+  vendor.pixelworks.hardware.display.IIrisComposerClient createComposerClient();
 }
