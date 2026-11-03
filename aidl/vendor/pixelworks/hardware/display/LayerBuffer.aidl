@@ -10,13 +10,13 @@ import vendor.pixelworks.hardware.display.ColorMetaData;
 
 @VintfStability
 parcelable LayerBuffer {
-    BufferInfo bufferInfo;
-    ColorMetaData colorMetadata;
     int width;
     int height;
     int unalignedWidth;
     int unalignedHeight;
+    ColorMetaData colorMetadata;
     int acquireFenceFd;
     int releaseFenceFd;
     int flags;
+    BufferInfo bufferInfo;
 }

@@ -26,7 +26,6 @@ interface IIris {
   void buildLayerStack(long display, in vendor.pixelworks.hardware.display.LayerStack layerStack);
   void changeLayerType(long display, long layerId);
   int commitLayerStack(long display, int flags);
-  void configureIrisHdrMode(int mode);
   int configureIrisMaxcll(int maxcll);
   void createLayer(long display, long layerId);
   void destroyLayer(long display, long layerId);
@@ -50,7 +49,6 @@ interface IIris {
   void setActiveConfig(long display, in vendor.pixelworks.hardware.display.DisplayConfigVariableInfo config);
   void setClientTarget(long display, int target);
   int setColorModeWithRenderIntent(long display, int colorMode, int renderIntent);
-  int setColorTransform(in float[] matrix);
   void setDisplayConnected(long display, boolean connected);
   void setLayerBuffer(long display, long layerId, in vendor.pixelworks.hardware.display.BufferInfo buffer);
   void setLayerCompositionType(long display, long layerId, int type);
@@ -63,4 +61,6 @@ interface IIris {
   int setOsdAutoRefresh(int enable);
   int setPowerMode(long display, int mode, boolean fromIdle, boolean allowDoze);
   int[] updateDisplayBrightness(long display, int type, in int[] values);
+  int setColorTransform(in float[] matrix);
+  void configureIrisHdrMode(int mode);
 }

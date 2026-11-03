@@ -24,9 +24,9 @@ package vendor.pixelworks.hardware.display;
 @VintfStability
 parcelable Layer {
   vendor.pixelworks.hardware.display.LayerBuffer inputBuffer;
+  int composition;
   vendor.pixelworks.hardware.display.LayerRect dstRect;
   vendor.pixelworks.hardware.display.LayerTransform transform;
-  int composition;
   int planeAlpha;
   int layerFlags;
   int[] reserved;

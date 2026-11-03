@@ -12,9 +12,9 @@ import vendor.pixelworks.hardware.display.LayerTransform;
 @VintfStability
 parcelable Layer {
     LayerBuffer inputBuffer;
+    int composition;
     LayerRect dstRect;
     LayerTransform transform;
-    int composition;
     int planeAlpha;
     int layerFlags;
     int[] reserved;

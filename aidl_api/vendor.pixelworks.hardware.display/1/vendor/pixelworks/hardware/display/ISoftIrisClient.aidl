@@ -23,7 +23,7 @@
 package vendor.pixelworks.hardware.display;
 @VintfStability
 interface ISoftIrisClient {
-  int[] getConfig(long timestamp, int configId, in int[] params);
   int setConfig(long timestamp, int configId, in int[] params);
+  int[] getConfig(long timestamp, int configId, in int[] params);
   String setBatchConfig(int configId, String json);
 }

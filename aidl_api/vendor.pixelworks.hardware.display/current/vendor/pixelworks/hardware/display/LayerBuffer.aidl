@@ -23,13 +23,13 @@
 package vendor.pixelworks.hardware.display;
 @VintfStability
 parcelable LayerBuffer {
-  vendor.pixelworks.hardware.display.BufferInfo bufferInfo;
-  vendor.pixelworks.hardware.display.ColorMetaData colorMetadata;
   int width;
   int height;
   int unalignedWidth;
   int unalignedHeight;
+  vendor.pixelworks.hardware.display.ColorMetaData colorMetadata;
   int acquireFenceFd;
   int releaseFenceFd;
   int flags;
+  vendor.pixelworks.hardware.display.BufferInfo bufferInfo;
 }
