@@ -20,7 +20,7 @@ aidl_interface {
             enabled: true,
         },
         java: {
-            enabled: false,
+            platform_apis: true,
         },
     },
     versions_with_info: [
